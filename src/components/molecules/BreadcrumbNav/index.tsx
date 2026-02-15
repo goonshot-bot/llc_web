@@ -10,7 +10,6 @@ export const BreadcrumbNav: React.FC<BreadcrumbNavProps> = ({ subTitle }) => {
   const location = useLocation();
   const isBlogPage =
     location.pathname === '/blog' || location.pathname === '/case-studies';
-  const isCaseStudies = location.pathname === '/case-studies';
   return (
     <S.Nav
       textColor={isBlogPage ? '#5a5a5a' : '#ffffff'}

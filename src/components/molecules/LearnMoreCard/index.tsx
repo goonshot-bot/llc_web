@@ -1,5 +1,4 @@
 import * as S from './styles';
-import ArrowIcon from '../../../assets/images/icons/rightUpper.svg';
 interface LearnMoreCardProps {
   title: string;
   description: string;

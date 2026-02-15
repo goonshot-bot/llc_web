@@ -7,7 +7,7 @@ import { ErrorBoundary } from '@highlight-run/react';
 import StyledEngineProvider from '@mui/material/StyledEngineProvider';
 import { ThemeProvider } from '@mui/material/styles';
 import { LicenseInfo } from '@mui/x-license-pro';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { useIdleTimer } from 'react-idle-timer';
 import { BrowserRouter } from 'react-router-dom';
@@ -34,11 +34,9 @@ LicenseInfo.setLicenseKey(muiDataGridLicenseKey);
 H.init('kgr474d6', highlightConfiguration);
 
 function App() {
-  const [openWarningModal, setOpenWarningModal] = useState<boolean>(false);
   const onIdle = () => {
     const { pathname } = window.location;
     if (excludeRoutesToAuth.some((r) => pathname.startsWith(r))) return;
-    setOpenWarningModal(true);
   };
   useIdleTimer({ timeout: 1000 * 60 * 60, onIdle, debounce: 500 });
   const { search } = window.location;
