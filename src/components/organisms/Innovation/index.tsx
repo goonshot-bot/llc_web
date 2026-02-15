@@ -1,4 +1,3 @@
-import LeftImage from '../../../assets/images/icons/large-left.svg';
 import LearnMoreCard from '../../molecules/LearnMoreCard';
 import * as S from './styles';
 import StoryIcon1 from '../../../assets/images/icons/story1.svg';

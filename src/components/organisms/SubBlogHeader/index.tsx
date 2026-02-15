@@ -22,7 +22,7 @@ export const SubBlogHeader: React.FC<SubBlogHeaderProps> = ({
         Home
       </a>
       <span>{' > '}</span>
-      <a style={{ textDecoration: 'none' }}>
+      <span style={{ textDecoration: 'none' }}>
         {meta.tags.map((tag, index) => (
           <React.Fragment key={index}>
             <span style={{ color: '#FFD800' }}> {tag} </span>
@@ -31,7 +31,7 @@ export const SubBlogHeader: React.FC<SubBlogHeaderProps> = ({
             )}
           </React.Fragment>
         ))}
-      </a>
+      </span>
       <span>{'>'}</span>
       <span>{title}</span>
     </S.Breadcrumb>

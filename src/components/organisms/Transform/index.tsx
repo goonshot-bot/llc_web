@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import React, { useState, useRef } from 'react';
+import { useState } from 'react';
 import Skeleton from '@mui/material/Skeleton';
 import * as S from './styles';
 import LeftImage from '../../../assets/images/icons/large-left.svg';
@@ -7,8 +7,6 @@ import { BlogCard } from '../../molecules/BlogCard';
 import Blog1 from '../../../assets/images/backgrounds/blog1.svg';
 import Blog2 from '../../../assets/images/backgrounds/blog2.svg';
 import Blog3 from '../../../assets/images/backgrounds/blog3.svg';
-import ThumbnailImage from '../../../assets/images/backgrounds/thumbnail.png';
-import PlayButtonImage from '../../../assets/images/icons/playButton.svg';
 const blogPosts = [
   {
     image: Blog1,

@@ -1,7 +1,5 @@
 import * as env from 'env-var';
 import { HighlightOptions } from 'highlight.run';
-const environmentTypes = ['development', 'staging', 'production'] as const;
-type EnvironmentType = (typeof environmentTypes)[number];
 
 export const environment = 'production';
 

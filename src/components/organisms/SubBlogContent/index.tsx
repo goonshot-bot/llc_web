@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as S from './styles';
-import SubBlogImage from '../../../assets/images/backgrounds/SubBlog1.svg';
 interface SubBlogContentProps {
   title: string;
   content: string;
